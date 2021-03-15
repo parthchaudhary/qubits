@@ -1,0 +1,34 @@
+// Variables
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-white: #fbfbfb;
+  --primary-color: #2e5a77;
+  --light-sky: #DFEEF8;
+  --main-bg: #F9F9F9;
+}
+
+$primary-color: var(--primary-color);
+$light-sky: var(--light-sky);
+
+// Mixins
+@mixin box-shadow {
+  -webkit-box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
+  box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+// functions
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
+}

@@ -1,0 +1,85 @@
+.home {
+  &-sec {
+    height: 635px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-options {
+    @include box-shadow;
+    border-radius: 12px;
+    width: 600px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: var(--light-white);
+    text-align: center;
+
+    .logo {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.option-link {
+  @include box-shadow;
+  @include transition(all ease-in-out 300ms);
+  display: block;
+  text-decoration: none;
+  background-color: $white;
+  border-radius: 12px;
+  padding: 50px 10px;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 700;
+  font-size: rem(24px);
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+// signup sec
+.signup-sec {
+  padding: 32px 0 16px;
+
+  .form-control {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+}
+@include media-breakpoint-down(sm) {
+  .home {
+    &-sec {
+      height: auto;
+    }
+  }
+
+  .option-link{
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .signup-sec {
+    padding: 32px 0;
+  
+    .btn {
+      width: 100%;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+}

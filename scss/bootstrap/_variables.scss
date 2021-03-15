@@ -62,8 +62,8 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #2e5a77 !default;
+$secondary:     #333333 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -371,7 +371,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           25px !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
@@ -397,10 +397,10 @@ $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
 $input-border-color:                    $gray-400 !default;
-$input-border-width:                    $input-btn-border-width !default;
-$input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+$input-border-width:                    0 !default;
+$input-box-shadow:                      10px 10px 50px 3px rgba(39, 92, 141, 0.1);
 
-$input-border-radius:                   $border-radius !default;
+$input-border-radius:                   25px !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 

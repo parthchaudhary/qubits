@@ -4,17 +4,31 @@
   --black: #000000;
   --light-white: #fbfbfb;
   --primary-color: #2e5a77;
+  --primary-light-color: #91BAE0;
   --light-sky: #DFEEF8;
   --main-bg: #F9F9F9;
+  --grey-color: #C4C4C4;
 }
 
 $primary-color: var(--primary-color);
+$primary-light-color: var(--primary-light-color);
 $light-sky: var(--light-sky);
 
 // Mixins
 @mixin box-shadow {
-  -webkit-box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
-  box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+  box-shadow: 0px 0px 5px 0px rgba(214,214,214,1);
+}
+
+@mixin border-radius {
+  border-radius: 15px;
+}
+
+@mixin list-style-none {
+  list-style: none;
+  padding: initial;
+  margin: initial;
 }
 
 @mixin transition($transition...) {

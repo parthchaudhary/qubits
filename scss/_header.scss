@@ -1,0 +1,63 @@
+.header {
+  @include box-shadow;
+  margin-bottom: 25px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .logo {
+    img {
+      max-width: 180px;
+    }
+  }
+}
+
+.user-options {
+  button {
+    @include transition(color ease-in-out 300ms);
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    i {
+      font-size: rem(35px);
+    }
+  }
+
+  .dropdown.show {
+    button {
+      color: $primary-color;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .navigation {
+    padding: 15px 0;
+    .logo {
+      img {
+        max-width: 125px;
+      }
+    }
+  }
+
+  .user-options {
+    button i {
+      font-size: 2rem;
+    }
+  }
+}

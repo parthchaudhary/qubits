@@ -35,10 +35,9 @@
   text-decoration: none;
   background-color: $white;
   border-radius: 12px;
-  padding: 50px 10px;
-  text-transform: uppercase;
+  padding: 35px 10px;
   color: $black;
-  font-weight: 700;
+  font-weight: 600;
   font-size: rem(24px);
   margin-bottom: 20px;
 
@@ -46,6 +45,15 @@
     background-color: $primary-color;
     color: $white;
     text-decoration: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  label,
+  i {
+    cursor: pointer;
   }
 }
 
@@ -58,28 +66,36 @@
   }
 }
 
-@include media-breakpoint-down(xs) {
+// media
+@include media-breakpoint-down(md) {
 }
+
 @include media-breakpoint-down(sm) {
   .home {
     &-sec {
       height: auto;
     }
+    &-options {
+      .logo {
+        margin-bottom: 20px;
+      }
+    }
   }
 
-  .option-link{
-      max-width: 250px;
-      margin-left: auto;
-      margin-right: auto;
+  .option-link {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .signup-sec {
     padding: 32px 0;
-  
+
     .btn {
       width: 100%;
     }
   }
 }
-@include media-breakpoint-down(md) {
+
+@include media-breakpoint-down(xs) {
 }

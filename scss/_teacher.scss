@@ -1,0 +1,63 @@
+.course {
+  &-list {
+    .card {
+      margin-bottom: 20px;
+      position: relative;
+
+      .status {
+        background-color: var(--course-completed-color);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        position: absolute;
+        top: 0;
+        right: 18px;
+        font-size: rem(14px);
+        font-weight: 600;
+        color: $white;
+        padding: 7px 1px 10px;
+        letter-spacing: 1px;
+        min-height: 100px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          border: 11px solid var(--course-completed-color);
+          border-bottom-color: transparent !important;
+          border-width: 5px 11px 17px 11px;
+        }
+
+        &.active {
+          background-color: var(--course-active-color);
+
+          &::after {
+            border-color: var(--course-active-color);
+          }
+        }
+
+        &.inactive {
+          background-color: var(--course-inactive-color);
+
+          &::after {
+            border-color: var(--course-inactive-color);
+          }
+        }
+      }
+    }
+
+    &-item {
+        display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+
+    > .row {
+        margin-bottom: -20px;
+    }
+  }
+}

@@ -45,58 +45,77 @@
     <!-- main section -->
     <main>
         <div class="container">
-            <section class="sidebar-layout">
-                <!-- side bar menu -->
-                <div class="sidebar-menu">
-                    <ul>
-                        <li><a href="teacher_home.html" class="active"><span><i class="fas fa-home"></i> Home</a></span></li>
-                        <li><a href="teacher_courses.html"><span><i class="fas fa-book"></i> Courses</a></span></li>
-                        <li><a href="teacher_classes.html"><span><i class="fas fa-users"></i> Classes</a></span></li>
-                        <li><a href="teacher_leader_board.html"><span><i class="fas fa-graduation-cap"></i> Leader Board</a></span></li>
-                        <li><a href="teacher_assistance.html"><span><i class="fas fa-question-circle"></i> Assistance</a></span></li>
-                    </ul>
+            <section class="course-sec">
+                <!-- tag filter -->
+                <div class="tag-filter">
+                    <a href="#" class="tag">Course</a>
+                    <a href="#" class="tag active">Assignment</a>
+                    <a href="#" class="tag">Discussion</a>
                 </div>
 
-                <!-- content section -->
-                <div class="content">
-                    <!-- slider -->
-                    <div class="slider-container">
-                        <div class="custom-sldier">
-                            <div class="slick-item" style="background-image: url('./assets/slide-1.jpg');"></div>
-                            <div class="slick-item" style="background-image: url('./assets/slide-2.jpg');"></div>
-                            <div class="slick-item" style="background-image: url('./assets/slide-1.jpg');"></div>
-                        </div>
-                    </div>
-                    <!-- notification -->
-                    <div class="shadow-box">
-                        <div class="notification-sec">
-                            <h4 class="sec-title"><i class="fas fa-bell"></i> Notifications</h4>
-                            <ul class="notifications">
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li class="imp-notice">
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                            </ul>
+                <!-- title -->
+                <div class="heading-title">
+                    <h2>Assignment</h2>
+                    <div class="search-input">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+
+                <!-- short filter -->
+                <div class="short-filter">
+                    <label>Sort by:</label>
+                    <select class="custom-select">
+                        <option selected="">Grade</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="custom-select">
+                        <option selected="">Section</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <!-- course info -->
+                <div class="course-assignment-info">
+                    <div class="assignment-table">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date</th>                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>                                    
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>20/12/2020</td>
+                                  </tr>
+                                  <tr>                                    
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>20/12/2020</td>
+                                  </tr>
+                                  <tr>                                    
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>20/12/2020</td>
+                                  </tr>
+                                  <tr>                                    
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>20/12/2020</td>
+                                  </tr>
+                                  <tr>                                    
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>20/12/2020</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                         </div>
                     </div>
                 </div>

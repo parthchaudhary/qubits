@@ -45,120 +45,57 @@
     <!-- main section -->
     <main>
         <div class="container">
-            <section class="sidebar-layout">
-                <!-- side bar menu -->
-                <div class="sidebar-menu">
-                    <ul>
-                        <li><a href="teacher_home.html"><span><i class="fas fa-home"></i> Home</a></span></li>
-                        <li><a href="teacher_course.html" class="active"><span><i class="fas fa-book"></i>
-                                    Courses</a></span></li>
-                        <li><a href="#"><span><i class="fas fa-users"></i> Classes</a></span></li>
-                        <li><a href="#"><span><i class="fas fa-graduation-cap"></i> Leader Board</a></span></li>
-                        <li><a href="#"><span><i class="fas fa-question-circle"></i> Assistance</a></span></li>
-                    </ul>
+            <section class="course-sec">
+                <!-- tag filter -->
+                <div class="tag-filter">
+                    <a href="#" class="tag active">Course</a>
+                    <a href="#" class="tag">Assignment</a>
+                    <a href="#" class="tag">Discussion</a>
                 </div>
 
-                <!-- content section -->
-                <div class="content">
-                    <div class="course-board">
-                        <!-- short filter -->
-                        <div class="short-filter">
-                            <label>Sort by:</label>
-                            <select class="custom-select">
-                                <option selected>Grade</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <select class="custom-select">
-                                <option selected>Section</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                <!-- course info -->
+                <div class="course-info">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="shadow-box">
+                                <h3>Course</h3>
+                                <hr>
+                                <h6>Course Overview</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis excepturi fuga est illo ut culpa quisquam sint necessitatibus debitis.</p>
+                            </div>
+                            <div class="shadow-box">                                
+                                <h6>Course Outline</h6>
+                                <hr>                             
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <label class="accordion-header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus magni quae tempore pariatur dolores quidem nobis, numquam culpa dicta architecto atque placeat eligendi officiis, iure id doloribus temporibus! Magni exercitationem commodiarchitecto officiis eligendi mollitia dicta assumenda ipsa expedita ad.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <label class="accordion-header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus magni quae tempore pariatur dolores quidem nobis, numquam culpa dicta architecto atque placeat eligendi officiis, iure id doloribus temporibus! Magni exercitationem commodiarchitecto officiis eligendi mollitia dicta assumenda ipsa expedita ad.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <label class="accordion-header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus magni quae tempore pariatur dolores quidem nobis, numquam culpa dicta architecto atque placeat eligendi officiis, iure id doloribus temporibus! Magni exercitationem commodiarchitecto officiis eligendi mollitia dicta assumenda ipsa expedita ad.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- courses list -->
-                        <div class="shadow-box course-list">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status completed">Completed</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status active">Active</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status inactive">Inactive</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status completed">Completed</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status active">Active</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <a href="#" class="course-item">
-                                        <div class="card">
-                                            <div class="status inactive">Inactive</div>
-                                            <img class="card-img-top" src="./assets/slide-2.jpg" alt="course img">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="info-text py-3">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                </p>
+                                <button class="btn btn-primary py-2 px-4">
+                                    Start/ Resume
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -215,9 +152,7 @@
     </section>
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

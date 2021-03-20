@@ -48,7 +48,7 @@
     }
 
     &-item {
-        display: block;
+      display: block;
     }
 
     a {
@@ -57,7 +57,21 @@
     }
 
     > .row {
-        margin-bottom: -20px;
+      margin-bottom: -20px;
     }
+  }
+}
+
+.student-name {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
   }
 }

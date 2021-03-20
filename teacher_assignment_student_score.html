@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qubits | Teacher Home</title>
+    <title>Qubits | Assignment score</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
@@ -45,61 +45,50 @@
     <!-- main section -->
     <main>
         <div class="container">
-            <section class="sidebar-layout">
-                <!-- side bar menu -->
-                <div class="sidebar-menu">
-                    <ul>
-                        <li><a href="teacher_home.html" class="active"><span><i class="fas fa-home"></i> Home</a></span></li>
-                        <li><a href="teacher_courses.html"><span><i class="fas fa-book"></i> Courses</a></span></li>
-                        <li><a href="teacher_classes.html"><span><i class="fas fa-users"></i> Classes</a></span></li>
-                        <li><a href="teacher_leader_board.html"><span><i class="fas fa-graduation-cap"></i> Leader Board</a></span></li>
-                        <li><a href="teacher_assistance.html"><span><i class="fas fa-question-circle"></i> Assistance</a></span></li>
-                    </ul>
+            <section class="course-sec">
+                <!-- tag filter -->
+                <div class="tag-filter">
+                    <a href="#" class="tag">Course</a>
+                    <a href="#" class="tag active">Assignment</a>
+                    <a href="#" class="tag">Discussion</a>
                 </div>
 
-                <!-- content section -->
-                <div class="content">
-                    <!-- slider -->
-                    <div class="slider-container">
-                        <div class="custom-sldier">
-                            <div class="slick-item" style="background-image: url('./assets/slide-1.jpg');"></div>
-                            <div class="slick-item" style="background-image: url('./assets/slide-2.jpg');"></div>
-                            <div class="slick-item" style="background-image: url('./assets/slide-1.jpg');"></div>
-                        </div>
-                    </div>
-                    <!-- notification -->
-                    <div class="shadow-box">
-                        <div class="notification-sec">
-                            <h4 class="sec-title"><i class="fas fa-bell"></i> Notifications</h4>
-                            <ul class="notifications">
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                                <li class="imp-notice">
-                                    <a href="#">
-                                        <span class="msg">Update on lesson course</span>
-                                        <span class="date">20/12/2024</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- title -->
+                <div class="heading-title">
+                    <h2>Assignment</h2>            
                 </div>
+
+                <!-- assignment score -->
+                <div class="course-assignment-score">
+                    <h5 class="mb-4">Student score</h5>
+                    <div class="profile-sec">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-5">
+                                <div class="profile-info">
+                                    <img class="profile-pic" src="./assets/slide-2.jpg" alt="profile photo">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Name:</strong> Mahendra</li>
+                                        <li><strong>Class:</strong> No Study</li>
+                                        <li><strong>Bio:</strong> EDX Don</li>
+                                    </ul>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-7">
+                                <div class="profile-data shadow-box">
+                                    <div class="score">
+                                        <h5>Score</h5>
+                                    </div>
+                                    <div class="summary">
+                                        <h5>Summary</h5>
+                                    </div>
+                                    <div class="remarks">
+                                        <h5>Remarks</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </section>
         </div>
     </main>

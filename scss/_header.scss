@@ -26,11 +26,18 @@
     outline: none;
 
     &:hover {
-      color: $primary-color;
+      color: $primary-color;      
     }
 
-    i {
-      font-size: rem(35px);
+    .user-img {
+      img {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 5px;
+      }
     }
   }
 

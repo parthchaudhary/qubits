@@ -351,6 +351,23 @@ main {
   min-height: 350px;
 }
 
+// achievements-badge
+
+.achievements-badge {
+  min-height: 385px;
+  .badge-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+      margin-left: 10px;
+      font-size: 25px;
+      color: var(--dark-yellow-color);
+    }
+  }
+}
+
 // media
 @include media-breakpoint-down(lg) {
   .sidebar {

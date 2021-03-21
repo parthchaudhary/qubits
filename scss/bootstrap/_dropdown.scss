@@ -26,9 +26,10 @@
   list-style: none;
   background-color: $dropdown-bg;
   background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
+  // border: $dropdown-border-width solid $dropdown-border-color;
   @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
+  -webkit-box-shadow: 0px 0px 5px 0px #d6d6d6;
+  box-shadow: 0px 0px 5px 0px #d6d6d6;
 }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)

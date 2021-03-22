@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qubits | Teacher Home</title>
+    <title>Qubits | Assignment score</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
@@ -28,8 +28,8 @@
                 </div>
                 <div class="user-options">
                     <div class="dropdown">
-                        <button class="dropdown-toggle" type="button" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <button class="dropdown-toggle" type="button" id="nav-dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             <span class="user-img">
                                 <img src="./assets/slide-1.jpg" alt="">
                             </span>
@@ -48,77 +48,87 @@
     <!-- main section -->
     <main>
         <div class="container">
-            <section class="course-sec">
-                <!-- tag filter -->
-                <div class="tag-filter">
-                    <a href="#" class="tag">Course</a>
-                    <a href="#" class="tag active">Assignment</a>
-                    <a href="#" class="tag">Discussion</a>
+            <section class="sidebar-layout">
+                <!-- side bar menu -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="teacher_home.html"><span><i class="fas fa-home"></i> Home</a></span></li>
+                        <li><a href="teacher_courses.html"><span><i class="fas fa-book"></i> Courses</a></span></li>
+                        <li><a href="teacher_classes.html" class="active"><span><i class="fas fa-users"></i>
+                                    Classes</a></span></li>
+                        <li><a href="teacher_leader_board.html"><span><i class="fas fa-graduation-cap"></i> Leader
+                                    Board</a></span></li>
+                        <li><a href="teacher_assistance.html"><span><i class="fas fa-question-circle"></i>
+                                    Assistance</a></span></li>
+                    </ul>
                 </div>
 
-                <!-- title -->
-                <div class="heading-title">
-                    <h2>Assignment</h2>
-                    <div class="search-input">
-                        <form>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Search">
-                            </div>
-                        </form>
-                    </div>                    
-                </div>
-
-                <!-- short filter -->
-                <div class="short-filter">
-                    <label>Sort by:</label>
-                    <select class="custom-select">
-                        <option selected="">Grade</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <select class="custom-select">
-                        <option selected="">Section</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-
-                <!-- course info -->
-                <div class="course-assignment-info">
-                    <div class="assignment-table">
+                <!-- content section -->
+                <div class="content">
+                    <div class="student-profile">
+                        <!-- title -->
+                        <div class="heading-title">
+                            <h2>Student Profile</h2>
+                        </div>
+                        <!-- search -->
+                        <div class="search-input">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Search">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- table -->
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
-                                  <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Date</th>                                    
-                                  </tr>
+                                    <tr>
+                                        <th scope="col">Student Name</th>                                        
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>                                    
-                                    <td><a href="#" class="td-none">Lorem ipsum dolor sit amet.</a></td>
-                                    <td>20/12/2020</td>
-                                  </tr>
-                                  <tr>                                    
-                                    <td><a href="#" class="td-none">Lorem ipsum dolor sit amet.</a></td>
-                                    <td>20/12/2020</td>
-                                  </tr>
-                                  <tr>                                    
-                                    <td><a href="#" class="td-none">Lorem ipsum dolor sit amet.</a></td>
-                                    <td>20/12/2020</td>
-                                  </tr>
-                                  <tr>                                    
-                                    <td><a href="#" class="td-none">Lorem ipsum dolor sit amet.</a></td>
-                                    <td>20/12/2020</td>
-                                  </tr>
-                                  <tr>                                    
-                                    <td><a href="#" class="td-none">Lorem ipsum dolor sit amet.</a></td>
-                                    <td>20/12/2020</td>
-                                  </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="teacher_student_profile.html" class="td-none">
+                                                <div class="student-name">
+                                                    <img src="./assets/slide-1.jpg" alt="student_img">
+                                                    <span>Lorem ipsum dolor sit</span>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="teacher_student_profile.html" class="td-none">
+                                                <div class="student-name">
+                                                    <img src="./assets/slide-1.jpg" alt="student_img">
+                                                    <span>Lorem ipsum dolor sit</span>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="teacher_student_profile.html" class="td-none">
+                                                <div class="student-name">
+                                                    <img src="./assets/slide-1.jpg" alt="student_img">
+                                                    <span>Lorem ipsum dolor sit</span>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="teacher_student_profile.html" class="td-none">
+                                                <div class="student-name">
+                                                    <img src="./assets/slide-1.jpg" alt="student_img">
+                                                    <span>Lorem ipsum dolor sit</span>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
                     </div>
                 </div>

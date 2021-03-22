@@ -1,8 +1,20 @@
 .course {
+  &-item {
+    display: block;
+    height: calc(100% - 20px);
+
+    .card-text,
+    .catagory,
+    .course-time {
+      margin-bottom: 5px;
+    }
+  }
+
   &-list {
     .card {
       margin-bottom: 20px;
       position: relative;
+      height: 100%;
 
       .status {
         background-color: var(--course-completed-color);
@@ -47,13 +59,30 @@
       }
     }
 
-    &-item {
-      display: block;
-    }
-
     a {
       text-decoration: none;
       color: $black;
+    }
+
+    .card-img {
+      position: relative;
+    }
+
+    .division {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      font-size: rem(22);
+      font-weight: 600;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
     }
 
     > .row {

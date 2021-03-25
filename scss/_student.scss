@@ -1,0 +1,272 @@
+.course-detail-intro {
+  margin-bottom: 30px;
+  //   border-bottom: 2px solid $light-sky;
+  //   padding-bottom: 30px;
+}
+
+.intor-details {
+  margin-bottom: 40px;
+
+  img {
+    max-width: 160px;
+  }
+}
+
+.session-details {
+  .label {
+    font-weight: bold;
+  }
+}
+
+.session {
+  &-select {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  &-input {
+    padding: 30px 15px 15px;
+    border: 1px solid gray;
+    position: relative;
+    border-radius: 4px;
+    width: calc(33% - 5px);
+    margin-right: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    h6 {
+      margin-bottom: 0;
+    }
+
+    span {
+      display: block;
+
+      > * {
+        position: relative;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $primary-color;
+        opacity: 0;
+      }
+    }
+
+    input {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+
+      &:checked + span::before {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.enroll-action {
+  .action-btn {
+    display: flex;
+    align-items: flex-start;
+
+    .btn {
+      flex-shrink: 0;
+      margin-right: 10px;
+      min-width: 180px;
+    }
+
+    .enroll-check {
+      display: flex;
+      align-items: start;
+      cursor: pointer;
+
+      input {
+        margin-top: 5px;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.course-thumnil-img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.course-detail-more {
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.partner-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 160px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+}
+
+.your-instructors {
+  margin-bottom: 50px;
+}
+
+.instructor-detail {
+  display: flex;
+  max-width: 350px;
+
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 15px 15px 0;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    a {
+      text-decoration: underline;
+    }
+
+    a,
+    i,
+    span {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.certificate-points {
+  overflow: hidden;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+  .certificate-img {
+    float: right;
+    width: 320px;
+    margin: 0 5px 20px;
+    @include box-shadow;
+  }
+
+  ul {
+    li {
+      position: relative;
+      padding-left: 55px;
+
+      i {
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.key-info-table {
+    margin-bottom: 20px;
+  .table {
+
+    i{
+        margin-right: 10px;
+    }
+
+    tr:first-child th,
+    tr:first-child td {
+        border-top: 0;
+    }
+  }
+
+  font-size: 18px;
+}
+
+.share-courses-link {
+    margin-bottom: 20px;
+    p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .social-links {
+        li {
+            width: auto;
+
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .course-detail-section {
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+    .session-select {
+        max-width: 350px;
+
+        .session-input {
+            width: calc(50% - 5px);
+        }
+    }
+
+    .action-btn {
+        flex-wrap: wrap;        
+        margin-bottom: 20px;
+    }
+    .enroll-check {
+        display: block;
+        width: 100%;
+        order: -1;
+    }
+
+    .certificate-points .certificate-img {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .certificate-points ul li {
+        padding-left: 40px;
+
+        i {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+}

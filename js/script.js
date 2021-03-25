@@ -11,8 +11,12 @@ $(document).ready(function(){
 
     // accordion call
     accordion();
+
+    // read more
+    readMore();
 });
 
+// accordion
 function accordion() {
     $(".accordion-header").click(function() {
       if (
@@ -45,3 +49,14 @@ function accordion() {
     });
 }
   
+// read more block
+function readMore() {
+  $('.read-more-block .trigger').click(function(){
+    let mainBlock = $(this).parent('.read-more-block');
+    if(mainBlock.hasClass('active')) {
+      mainBlock.removeClass('active');
+    }else{
+      mainBlock.addClass('active');
+    }
+  })
+}

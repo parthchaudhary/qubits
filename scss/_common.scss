@@ -457,6 +457,54 @@ a.td-none {
   }
 }
 
+.read-more-block {
+  margin-bottom: 20px;
+  .content {
+    @include transition(all ease-in-out 1s);
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff);
+    }    
+  }  
+
+  .trigger {
+    padding: 15px 0;
+    cursor: pointer;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &.active {
+    .content {
+      max-height: 2000px;
+
+      &::after{
+        content: none;
+      }
+    }
+
+    .trigger {
+      .collapse {
+        display: block;
+      }
+      .expand{
+        display: none;
+      }
+    }
+  }
+}
+
 // media
 @include media-breakpoint-down(lg) {
   .sidebar {

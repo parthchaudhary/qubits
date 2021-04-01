@@ -375,10 +375,36 @@ a.td-none {
     justify-content: space-between;
     margin-bottom: 10px;
 
+    &:not(.badge-row-title) {
+      border: 1px solid $primary-light-color;
+      padding: 5px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
     i {
       margin-left: 10px;
       font-size: 35px;
       color: var(--dark-yellow-color);
+    }
+
+    h5 {
+      font-size: rem(18px);
+      
+      strong,
+      small {
+        display: block;
+      }
+
+      strong {
+        margin-bottom: 5px;
+      }
+    }
+
+    img {
+      width: 40px;
+      flex-shrink: 0;
+      margin-left: 5px;
     }
   }
 }
